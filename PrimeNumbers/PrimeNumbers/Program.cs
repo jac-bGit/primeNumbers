@@ -40,5 +40,41 @@ namespace PrimeNumbers
             // Musí se udělat cyklus/metoda která projde čísla od 1000 a zároveň oznámí userovi že se použije metoda blba bla
             Console.ReadKey();
         }
+
+        //zjisti, zdali zadane cele cislo je prvo cislo a nasledne vypise pouzitou metodu reseni
+        public static bool JeToPrvoCislo(int cislo)
+        {
+            bool jePrvocilo = false;
+
+            List<int> prvoCisla = EratosthenovoSito(cislo);
+            foreach (int c in prvoCisla)
+            {
+                if (c == cislo)
+                    jePrvocilo = true;
+            }
+
+            return jePrvocilo;
+        }
+
+        public static List<int> EratosthenovoSito(int po)
+        {
+            //vytvorit list cisel mezi 2 - po
+            List<int> prvocisla = new List<int>();
+            for (int i = 2; i <= po; i++)
+                prvocisla.Add(i);
+
+            //nechat pouze prvocisla
+            for(int c = 0; c < prvocisla.Count; c++)
+            {
+                //zkontrolovat deleni pomoci aktualniho cisla
+                for(int i = 0; i < prvocisla.Count; i++)
+                {
+                    if (prvocisla[c] != 0 && prvocisla[c] != prvocisla[i] && (float)prvocisla[i] % (float)prvocisla[c] == 0)
+                        prvocisla[i] = 0;
+                }
+            }
+
+            return prvocisla;
+        }
     }
 }
