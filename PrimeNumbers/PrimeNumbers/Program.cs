@@ -29,24 +29,40 @@ namespace PrimeNumbers
             }
             while (res != true);
 
-
-            if (number == PrvoCisla.Find(item => item == number)) // Podmínka zjistí zdali prvočíslo do tisíce se nacházází v listu
+            if (number <= 1000)
             {
-                Console.WriteLine("Tvoje číslo " + number + " je prvočíslo");
+                if (number == PrvoCisla.Find(item => item == number)) // Podmínka zjistí zdali prvočíslo do tisíce se nacházází v listu
+                {
+                    Console.WriteLine("Tvoje číslo " + number + " je prvočíslo");
+                }
+                else
+                    Console.WriteLine("Tvoje číslo " + number + " není prvočíslo");
+
+                Console.WriteLine("K vyřešení bylo použito vyhledávání v listu prvočísel.");
             }
             else
-                Console.WriteLine("Tvoje číslo " + number + " není prvočíslo");
+            {
+                ErastotenovoSito es = new ErastotenovoSito();
+                if(es.JeToPrvoCislo(number)) // Vratí true nebo false o vyřešení čísla
+                    Console.WriteLine("Tvoje číslo " + number + " je prvočíslo");
+                else
+                    Console.WriteLine("Tvoje číslo " + number + " není prvočíslo");
 
-            // Musí se udělat cyklus/metoda která projde čísla od 1000 a zároveň oznámí userovi že se použije metoda blba bla
+                Console.WriteLine("K vyřešení byla použita metoda Eratosthenova síta.");
+            }
+
             Console.ReadKey();
         }
+    }
 
+    public class ErastotenovoSito
+    {
         //zjisti, zdali zadane cele cislo je prvo cislo a nasledne vypise pouzitou metodu reseni
-        public static bool JeToPrvoCislo(int cislo)
+        public bool JeToPrvoCislo(int cislo)
         {
             bool jePrvocilo = false;
 
-            List<int> prvoCisla = EratosthenovoSito(cislo);
+            List<int> prvoCisla = ListPrvocisel(cislo);
             foreach (int c in prvoCisla)
             {
                 if (c == cislo)
@@ -56,7 +72,7 @@ namespace PrimeNumbers
             return jePrvocilo;
         }
 
-        public static List<int> EratosthenovoSito(int po)
+        public List<int> ListPrvocisel(int po)
         {
             //vytvorit list cisel mezi 2 - po
             List<int> prvocisla = new List<int>();
@@ -64,10 +80,10 @@ namespace PrimeNumbers
                 prvocisla.Add(i);
 
             //nechat pouze prvocisla
-            for(int c = 0; c < prvocisla.Count; c++)
+            for (int c = 0; c < prvocisla.Count; c++)
             {
                 //zkontrolovat deleni pomoci aktualniho cisla
-                for(int i = 0; i < prvocisla.Count; i++)
+                for (int i = 0; i < prvocisla.Count; i++)
                 {
                     if (prvocisla[c] != 0 && prvocisla[c] != prvocisla[i] && (float)prvocisla[i] % (float)prvocisla[c] == 0)
                         prvocisla[i] = 0;
