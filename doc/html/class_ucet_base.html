@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Klient elektronického bankovnictví: Dokumentace třídy UcetBase</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Klient elektronického bankovnictví
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Ukázková konzolová aplikace v jazyce C++ pro potřeby prezentování možností systému Doxygen v rámci předmětu A2SPT/ÚIUI/FAI/UTB ve Zlíně</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generováno programem Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Hledat');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Veřejné metody</a> &#124;
+<a href="#pro-attribs">Chráněné atributy</a> &#124;
+<a href="class_ucet_base-members.html">Seznam všech členů</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentace třídy UcetBase</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Bázová třída pro všechny bankovní účty.  
+ <a href="class_ucet_base.html#details">...</a></p>
+<div class="dynheader">
+Diagram dědičnosti pro třídu UcetBase</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_ucet_base.png" usemap="#UcetBase_map" alt=""/>
+  <map id="UcetBase_map" name="UcetBase_map">
+<area href="class_ucet_bez_poplatku.html" title="Třída pro speciální typ bankovního účtu, ve kterém nejsou zpoplatněny převody." alt="UcetBezPoplatku" shape="rect" coords="0,56,121,80"/>
+<area href="class_ucet_nekdy_poplatky.html" title="Třída pro speciální typ bankovního účtu, ve kterém jsou zpoplatněny převody, avšak první tři jsou zda..." alt="UcetNekdyPoplatky" shape="rect" coords="131,56,252,80"/>
+<area href="class_ucet_poplatky.html" title="Třída pro speciální typ bankovního účtu, ve kterém jsou zpoplatněny převody." alt="UcetPoplatky" shape="rect" coords="262,56,383,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Veřejné metody</h2></td></tr>
+<tr class="memitem:a6f6755a4124c9f8f1e592210bebc7319"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ucet_base.html#a6f6755a4124c9f8f1e592210bebc7319">UcetBase</a> (string <a class="el" href="class_ucet_base.html#a6ceefcf09b55c2722eacfeb7e3a05a59">nazev</a>, double <a class="el" href="class_ucet_base.html#a452b606b09e790222760ca87d343fc48">zustatek</a>)</td></tr>
+<tr class="memdesc:a6f6755a4124c9f8f1e592210bebc7319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor třídy <a class="el" href="class_ucet_base.html" title="Bázová třída pro všechny bankovní účty.">UcetBase</a>.  <a href="class_ucet_base.html#a6f6755a4124c9f8f1e592210bebc7319">...</a><br /></td></tr>
+<tr class="separator:a6f6755a4124c9f8f1e592210bebc7319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa290c0f4808a148974fa5196c7076ade"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ucet_base.html#aa290c0f4808a148974fa5196c7076ade">~UcetBase</a> ()</td></tr>
+<tr class="memdesc:aa290c0f4808a148974fa5196c7076ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtuální destruktor třídy, je v něm postaráno o uvolnění alokované paměti.  <a href="class_ucet_base.html#aa290c0f4808a148974fa5196c7076ade">...</a><br /></td></tr>
+<tr class="separator:aa290c0f4808a148974fa5196c7076ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206f0eb76810f905cdcaa8f9d40fda5f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ucet_base.html#a206f0eb76810f905cdcaa8f9d40fda5f">getNazev</a> ()</td></tr>
+<tr class="memdesc:a206f0eb76810f905cdcaa8f9d40fda5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda vrací název bankovního účtu.  <a href="class_ucet_base.html#a206f0eb76810f905cdcaa8f9d40fda5f">...</a><br /></td></tr>
+<tr class="separator:a206f0eb76810f905cdcaa8f9d40fda5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba28e9ffde11f90805070033c63dd49f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ucet_base.html#aba28e9ffde11f90805070033c63dd49f">getZustatek</a> ()</td></tr>
+<tr class="memdesc:aba28e9ffde11f90805070033c63dd49f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda vrací zůstatek na bankovním účtu.  <a href="class_ucet_base.html#aba28e9ffde11f90805070033c63dd49f">...</a><br /></td></tr>
+<tr class="separator:aba28e9ffde11f90805070033c63dd49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff44c1a91ed234699e9a81eb85ee6058"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ucet_base.html#aff44c1a91ed234699e9a81eb85ee6058">preved</a> (double castka, int cisloUctu)</td></tr>
+<tr class="memdesc:aff44c1a91ed234699e9a81eb85ee6058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtuální metoda určená k realizaci transakce.  <a href="class_ucet_base.html#aff44c1a91ed234699e9a81eb85ee6058">...</a><br /></td></tr>
+<tr class="separator:aff44c1a91ed234699e9a81eb85ee6058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0765b8cc2a29fbe0ca935b4d387d0bb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ucet_base.html#a0765b8cc2a29fbe0ca935b4d387d0bb7">vypisHistorie</a> ()</td></tr>
+<tr class="memdesc:a0765b8cc2a29fbe0ca935b4d387d0bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda vypíše na standardní výstup historii transakcí na bankovním účtu.  <a href="class_ucet_base.html#a0765b8cc2a29fbe0ca935b4d387d0bb7">...</a><br /></td></tr>
+<tr class="separator:a0765b8cc2a29fbe0ca935b4d387d0bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Chráněné atributy</h2></td></tr>
+<tr class="memitem:a6ceefcf09b55c2722eacfeb7e3a05a59"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ucet_base.html#a6ceefcf09b55c2722eacfeb7e3a05a59">nazev</a></td></tr>
+<tr class="separator:a6ceefcf09b55c2722eacfeb7e3a05a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452b606b09e790222760ca87d343fc48"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ucet_base.html#a452b606b09e790222760ca87d343fc48">zustatek</a></td></tr>
+<tr class="separator:a452b606b09e790222760ca87d343fc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1410731d9ec21ac18f844c50119278"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_transakce.html">Transakce</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ucet_base.html#a0a1410731d9ec21ac18f844c50119278">historie</a></td></tr>
+<tr class="separator:a0a1410731d9ec21ac18f844c50119278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailní popis</h2>
+<div class="textblock"><p>Bázová třída pro všechny bankovní účty. </p>
+
+<p class="definition">Definice je uvedena na řádku <a class="el" href="klient-s-komentari_8cpp_source.html#l00084">84</a> v souboru <a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a>.</p>
+</div><h2 class="groupheader">Dokumentace konstruktoru a destruktoru</h2>
+<a id="a6f6755a4124c9f8f1e592210bebc7319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6755a4124c9f8f1e592210bebc7319">&#9670;&nbsp;</a></span>UcetBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UcetBase::UcetBase </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nazev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zustatek</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konstruktor třídy <a class="el" href="class_ucet_base.html" title="Bázová třída pro všechny bankovní účty.">UcetBase</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nazev</td><td>Název bankovního účtu </td></tr>
+    <tr><td class="paramname">zustatek</td><td>Číslo reprezentující výchozí výši zůstatku (standardně 0.0) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definice je uvedena na řádku <a class="el" href="klient-s-komentari_8cpp_source.html#l00097">97</a> v souboru <a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                            : <a class="code" href="class_ucet_base.html#a6ceefcf09b55c2722eacfeb7e3a05a59">nazev</a>(<a class="code" href="class_ucet_base.html#a6ceefcf09b55c2722eacfeb7e3a05a59">nazev</a>), <a class="code" href="class_ucet_base.html#a452b606b09e790222760ca87d343fc48">zustatek</a>(<a class="code" href="class_ucet_base.html#a452b606b09e790222760ca87d343fc48">zustatek</a>)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa290c0f4808a148974fa5196c7076ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa290c0f4808a148974fa5196c7076ade">&#9670;&nbsp;</a></span>~UcetBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual UcetBase::~UcetBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtuální destruktor třídy, je v něm postaráno o uvolnění alokované paměti. </p>
+
+<p class="definition">Definice je uvedena na řádku <a class="el" href="klient-s-komentari_8cpp_source.html#l00105">105</a> v souboru <a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_ucet_base.html#a0a1410731d9ec21ac18f844c50119278">historie</a>.size(); i++)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_ucet_base.html#a0a1410731d9ec21ac18f844c50119278">historie</a>[i] != NULL)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keyword">delete</span> <a class="code" href="class_ucet_base.html#a0a1410731d9ec21ac18f844c50119278">historie</a>[i];</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <a class="code" href="class_ucet_base.html#a0a1410731d9ec21ac18f844c50119278">historie</a>[i] = NULL;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentace k metodám</h2>
+<a id="a206f0eb76810f905cdcaa8f9d40fda5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206f0eb76810f905cdcaa8f9d40fda5f">&#9670;&nbsp;</a></span>getNazev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string UcetBase::getNazev </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda vrací název bankovního účtu. </p>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Název bankovního účtu </dd></dl>
+
+<p class="definition">Definice je uvedena na řádku <a class="el" href="klient-s-komentari_8cpp_source.html#l00121">121</a> v souboru <a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_ucet_base.html#a6ceefcf09b55c2722eacfeb7e3a05a59">nazev</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aba28e9ffde11f90805070033c63dd49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba28e9ffde11f90805070033c63dd49f">&#9670;&nbsp;</a></span>getZustatek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double UcetBase::getZustatek </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda vrací zůstatek na bankovním účtu. </p>
+<dl class="section return"><dt>Návratová hodnota</dt><dd>Zůstatek na bankovním účtu </dd></dl>
+
+<p class="definition">Definice je uvedena na řádku <a class="el" href="klient-s-komentari_8cpp_source.html#l00130">130</a> v souboru <a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_ucet_base.html#a452b606b09e790222760ca87d343fc48">zustatek</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aff44c1a91ed234699e9a81eb85ee6058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff44c1a91ed234699e9a81eb85ee6058">&#9670;&nbsp;</a></span>preved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UcetBase::preved </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>castka</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cisloUctu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtuální metoda určená k realizaci transakce. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">castka</td><td>Převáděná částka </td></tr>
+    <tr><td class="paramname">cisloUctu</td><td>Cílový bankovní účet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplementováno v <a class="el" href="class_ucet_nekdy_poplatky.html#a2f030313c46f7b57a62ef922e875c83c">UcetNekdyPoplatky</a>, <a class="el" href="class_ucet_poplatky.html#a450db86fade16cbc01396a519f89a80e">UcetPoplatky</a> a <a class="el" href="class_ucet_bez_poplatku.html#aa9ac6bbfb84cc6577ec431e42a7ab2e5">UcetBezPoplatku</a>.</p>
+
+<p class="definition">Definice je uvedena na řádku <a class="el" href="klient-s-komentari_8cpp_source.html#l00140">140</a> v souboru <a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0765b8cc2a29fbe0ca935b4d387d0bb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0765b8cc2a29fbe0ca935b4d387d0bb7">&#9670;&nbsp;</a></span>vypisHistorie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UcetBase::vypisHistorie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Metoda vypíše na standardní výstup historii transakcí na bankovním účtu. </p>
+
+<p class="definition">Definice je uvedena na řádku <a class="el" href="klient-s-komentari_8cpp_source.html#l00148">148</a> v souboru <a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        cout &lt;&lt; <a class="code" href="class_ucet_base.html#a206f0eb76810f905cdcaa8f9d40fda5f">getNazev</a>();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot; zustatek = &quot;</span> &lt;&lt; <a class="code" href="class_ucet_base.html#aba28e9ffde11f90805070033c63dd49f">getZustatek</a>();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        cout &lt;&lt; endl &lt;&lt; endl;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_ucet_base.html#a0a1410731d9ec21ac18f844c50119278">historie</a>.size(); i++)</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="code" href="class_transakce.html">Transakce</a>* transakce = <a class="code" href="class_ucet_base.html#a0a1410731d9ec21ac18f844c50119278">historie</a>[i];</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            cout &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;:&quot;</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot; castka = &quot;</span> &lt;&lt; transakce-&gt;<a class="code" href="class_transakce.html#a373069782bb3b19793946fe2a4c553c3">getCastka</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot; cislo uctu = &quot;</span> &lt;&lt; transakce-&gt;<a class="code" href="class_transakce.html#a685c0712876263c910fe53047d06fbd1">getCisloUctu</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Dokumentace k datovým členům</h2>
+<a id="a0a1410731d9ec21ac18f844c50119278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a1410731d9ec21ac18f844c50119278">&#9670;&nbsp;</a></span>historie</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="class_transakce.html">Transakce</a>*&gt; UcetBase::historie</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Vektor reprezentující hostorii transakcí </p>
+
+<p class="definition">Definice je uvedena na řádku <a class="el" href="klient-s-komentari_8cpp_source.html#l00089">89</a> v souboru <a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6ceefcf09b55c2722eacfeb7e3a05a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ceefcf09b55c2722eacfeb7e3a05a59">&#9670;&nbsp;</a></span>nazev</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string UcetBase::nazev</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Název bankovního účtu </p>
+
+<p class="definition">Definice je uvedena na řádku <a class="el" href="klient-s-komentari_8cpp_source.html#l00087">87</a> v souboru <a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a452b606b09e790222760ca87d343fc48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a452b606b09e790222760ca87d343fc48">&#9670;&nbsp;</a></span>zustatek</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double UcetBase::zustatek</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Aktuální dostupná částka na bankovním účtě </p>
+
+<p class="definition">Definice je uvedena na řádku <a class="el" href="klient-s-komentari_8cpp_source.html#l00088">88</a> v souboru <a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentace pro tuto třídu byla generována z následujícího souboru:<ul>
+<li>src/<a class="el" href="klient-s-komentari_8cpp_source.html">klient-s-komentari.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<div class="ttc" id="aclass_transakce_html"><div class="ttname"><a href="class_transakce.html">Transakce</a></div><div class="ttdoc">Třída charakterizující bankovní transakci.</div><div class="ttdef"><b>Definition:</b> <a href="klient-s-komentari_8cpp_source.html#l00045">klient-s-komentari.cpp:45</a></div></div>
+<div class="ttc" id="aclass_transakce_html_a373069782bb3b19793946fe2a4c553c3"><div class="ttname"><a href="class_transakce.html#a373069782bb3b19793946fe2a4c553c3">Transakce::getCastka</a></div><div class="ttdeci">double getCastka()</div><div class="ttdoc">Metoda vrací informaci o částce, která byla odeslána.</div><div class="ttdef"><b>Definition:</b> <a href="klient-s-komentari_8cpp_source.html#l00066">klient-s-komentari.cpp:66</a></div></div>
+<div class="ttc" id="aclass_transakce_html_a685c0712876263c910fe53047d06fbd1"><div class="ttname"><a href="class_transakce.html#a685c0712876263c910fe53047d06fbd1">Transakce::getCisloUctu</a></div><div class="ttdeci">double getCisloUctu()</div><div class="ttdoc">Metoda vrací informaci o čísle účtu, kam byly prostředky zaslány.</div><div class="ttdef"><b>Definition:</b> <a href="klient-s-komentari_8cpp_source.html#l00075">klient-s-komentari.cpp:75</a></div></div>
+<div class="ttc" id="aclass_ucet_base_html_a452b606b09e790222760ca87d343fc48"><div class="ttname"><a href="class_ucet_base.html#a452b606b09e790222760ca87d343fc48">UcetBase::zustatek</a></div><div class="ttdeci">double zustatek</div><div class="ttdef"><b>Definition:</b> <a href="klient-s-komentari_8cpp_source.html#l00088">klient-s-komentari.cpp:88</a></div></div>
+<div class="ttc" id="aclass_ucet_base_html_a6ceefcf09b55c2722eacfeb7e3a05a59"><div class="ttname"><a href="class_ucet_base.html#a6ceefcf09b55c2722eacfeb7e3a05a59">UcetBase::nazev</a></div><div class="ttdeci">string nazev</div><div class="ttdef"><b>Definition:</b> <a href="klient-s-komentari_8cpp_source.html#l00087">klient-s-komentari.cpp:87</a></div></div>
+<div class="ttc" id="aclass_ucet_base_html_a0a1410731d9ec21ac18f844c50119278"><div class="ttname"><a href="class_ucet_base.html#a0a1410731d9ec21ac18f844c50119278">UcetBase::historie</a></div><div class="ttdeci">vector&lt; Transakce * &gt; historie</div><div class="ttdef"><b>Definition:</b> <a href="klient-s-komentari_8cpp_source.html#l00089">klient-s-komentari.cpp:89</a></div></div>
+<div class="ttc" id="aclass_ucet_base_html_a206f0eb76810f905cdcaa8f9d40fda5f"><div class="ttname"><a href="class_ucet_base.html#a206f0eb76810f905cdcaa8f9d40fda5f">UcetBase::getNazev</a></div><div class="ttdeci">string getNazev()</div><div class="ttdoc">Metoda vrací název bankovního účtu.</div><div class="ttdef"><b>Definition:</b> <a href="klient-s-komentari_8cpp_source.html#l00121">klient-s-komentari.cpp:121</a></div></div>
+<div class="ttc" id="aclass_ucet_base_html_aba28e9ffde11f90805070033c63dd49f"><div class="ttname"><a href="class_ucet_base.html#aba28e9ffde11f90805070033c63dd49f">UcetBase::getZustatek</a></div><div class="ttdeci">double getZustatek()</div><div class="ttdoc">Metoda vrací zůstatek na bankovním účtu.</div><div class="ttdef"><b>Definition:</b> <a href="klient-s-komentari_8cpp_source.html#l00130">klient-s-komentari.cpp:130</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generováno čt 5. pro 2019 17.01:58 pro projekt Klient elektronického bankovnictví programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>
