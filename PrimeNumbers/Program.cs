@@ -3,10 +3,28 @@
  * \section intro Úvod
  *
  * Vítejne na hlavní stránce programové dokumentace jednoduchého kódu v programovacím jazyce C#. 
+ * 
+ * Tato dokumentace slouží jako ukázka zdokumentování naší jednoduché aplikace na rozpoznávání prvočísel.
+ * 
+ * Pojekt vznikl v prosinci 2019 v Zlíně 
+ * 
+ * Autoři: Jakub Werner a Petr Dětský
+ * 
+ * \section rozdeleni Rozdělení práce
+ * 
+ * Kód: Jakub Werner a Petr Dětský
+ * 
+ * Unit testy: Jakub Werner
+ * 
+ * Doxygen: Petr Dětský
+ * 
+ * GitHub: Jakub Werner a Petr Dětský
+ *
+ *
  */
 
 /**
- * \file klient-s-komentari.cpp
+ * \file PrimeNumbers.sln
  * \brief Ukázka aplikace na prvočísla
  * \author Jakub Werner, Petr Dětský
  * \date Prosinec 2019
